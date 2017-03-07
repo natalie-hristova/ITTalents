@@ -1,0 +1,38 @@
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
+public class Task04 {
+	/*
+	 * Да се състави програма, чрез която по въведени начална и крайна цифра се
+	 * извеждат на всеки нов ред следната последователност (триъгълник от
+	 * знаци):
+	 *  Пример: 1, 9
+	 *   Изход: 1
+	 *   		 1 2
+	 *   		 1 2 3
+	 *   		 ...
+	 *   	 до 1 2 3 4 5 6 7 8 9
+	 * Използвайте рекурсия
+	 */
+	public static void main(String[] args) {
+		int start = 4;
+		int end = 9;
+		makeTriangleFromNumbers(start, end,start);
+	}
+
+
+	static void iterateOneRow(int start,int end){
+		for (int i = start; i <=end; i++) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+	}
+	
+	static int makeTriangleFromNumbers(int start,int end,int x){
+		if (x ==end) {
+			iterateOneRow(start,x);
+			return 1;
+		}
+		iterateOneRow(start,x);
+		return (makeTriangleFromNumbers(start,end,x+1));
+	}
+}

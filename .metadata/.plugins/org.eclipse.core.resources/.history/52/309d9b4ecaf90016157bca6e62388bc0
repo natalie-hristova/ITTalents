@@ -1,0 +1,19 @@
+package tries;
+
+
+	class A {void f(){}}
+	   class B extends A {void h(){}}
+
+		B b = new B();
+		A a1 = new B();
+		A a2 = new A();
+		a1.f();
+		a2.f();
+		a1.h();
+		a2.h();
+		a1=a2;
+		a1=b;
+		a2=b;
+		b=a1;
+
+}

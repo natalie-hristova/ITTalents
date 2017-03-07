@@ -1,0 +1,20 @@
+package sdfs;
+
+public class try3 implements iTry,Itry2{
+
+
+	@Override
+	public void getMe() {
+		iTry.super.getMe();
+	}
+
+	@Override
+	public void est() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+
+}

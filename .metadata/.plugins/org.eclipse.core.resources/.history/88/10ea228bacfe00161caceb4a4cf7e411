@@ -1,0 +1,11 @@
+package sdfs;
+
+public interface Itry2 {
+
+	default void getMe(){
+		System.out.println("Polche");
+	}
+	
+		
+
+}

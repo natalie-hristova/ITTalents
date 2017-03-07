@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;homewrok08.Task05.getCommonLetter(...)&apos; to &apos;getIndexAtCommonLetter&apos;&#x0D;&#x0A;- Original project: &apos;Homework08&apos;&#x0D;&#x0A;- Original element: &apos;homewrok08.Task05.getCommonLetter(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;homewrok08.Task05.getIndexAtCommonLetter(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;getCommonLetter&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;homewrok08{Task05.java[Task05~getCommonLetter~QString;~QString;" name="getIndexAtCommonLetter" references="true" stamp="1481378748861" version="1.0"/>
+</session>

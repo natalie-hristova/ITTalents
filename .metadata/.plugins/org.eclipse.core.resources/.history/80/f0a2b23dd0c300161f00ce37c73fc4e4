@@ -1,0 +1,58 @@
+
+public class Task05 {
+
+	/*
+	 * Да се състави програма, чрез която се въвежда естествено число N.
+	 * Програмата да извежда число, чиито цифри са написани в ред обратен на
+	 * въведеното число. Да се извежда съобщение дали въведеното число е
+	 * палиндром. 
+	 * Пример: 12321 
+	 * Изход: 12321 да.
+	 *  Пример: 12578 
+	 *  Изход: 87521 не.
+	 * Използвайте рекурсия
+	 * 
+	 */
+	public static void main(String[] args) {
+		System.out.println(convert2(12321,5));
+	}
+
+	
+	static int multiplier(int xTens){
+		int multiplier= 1;
+		for (int i = 1; i < xTens; i++) {
+			multiplier *=10;
+		}
+		return multiplier;
+	}	
+	
+	static int convert(int x,int xTens,int a){
+	//	System.out.println(Integer.toString(x));
+System.out.println(Integer.toString(x));
+String p = Integer.toString(x);
+		if(xTens/2<=a){
+			return x;
+		}
+		int ones =x%10;
+		int dec =x/multiplier(xTens);
+		int end=(x%(multiplier(xTens)))/10;
+		//System.out.println(ones +" "+ dec);
+
+		return convert(x,xTens-2,a+1);
+	}
+	
+	static boolean convert2(int x, int xTens) {
+		if (xTens <= 1) {
+			return true;
+		}
+		int ones = x % 10;
+		int dec = x / multiplier(xTens);
+		int end = (x % (multiplier(xTens))) / 10;
+		System.out.println(end);
+		if (ones == dec) {
+			return convert2(end, xTens - 2);
+		} else {
+			return false;
+		}
+	}
+}

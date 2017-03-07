@@ -1,0 +1,9 @@
+import java.io.File;
+
+public class ReadAndReadFromFile {
+	public static void main(String[] args) {
+		File f = new File("naty"+ File.separator+"naty.txt");
+		File f = new File("naty"+ File.separator+"natyCopy.txt");
+	}
+
+}

@@ -1,0 +1,30 @@
+package excercises;
+
+public class A {
+	enum a {
+		naty, poli;
+	}
+
+	enum b implements iTry {
+
+	}
+
+	Tester a;
+
+	void m() {
+		a.testVar = 5;
+	}
+
+	static int x = 5;
+
+	void print() {
+		char c = '\u0000';
+		System.out.println(c + "   my dreamm is to  flyy over the rain bow so highhhh");
+	}
+
+	public class B {
+
+	}
+
+
+}
