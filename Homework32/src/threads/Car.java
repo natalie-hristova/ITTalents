@@ -15,8 +15,8 @@ public class Car {
 			@Override
 			public void run() {
 				try {
-					this.sleep(TIME_FOR_ENGINE);
-					this.sleep(TIME_FOR_FRAME);
+					Thread.sleep(TIME_FOR_ENGINE);
+					Thread.sleep(TIME_FOR_FRAME);
 				} catch (InterruptedException e) {
 					System.out.println("Could not could the engine and frame");
 					e.printStackTrace();
@@ -29,7 +29,7 @@ public class Car {
 			public void run() {
 				for (int i = 0; i < 4; i++) {
 					try {
-						this.sleep(TIME_FOR_SEAT);
+						Thread.sleep(TIME_FOR_SEAT);
 					} catch (InterruptedException e) {
 						System.out.println("Could not bould the 4 seats");
 						e.printStackTrace();
@@ -43,13 +43,13 @@ public class Car {
 			public void run() {
 				for (int i = 0; i < 4; i++) {
 					try {
-						this.sleep(TIME_FOR_TYRE);
+						Thread.sleep(TIME_FOR_TYRE);
 					} catch (InterruptedException e) {
 						System.out.println("Could not bould the tyres");
 					}
 				}
 				try {
-					this.sleep(TIME_FOR_SEAT);
+					Thread.sleep(TIME_FOR_SEAT);
 				} catch (InterruptedException e) {
 					System.out.println("Could not bould the last seat");
 					e.printStackTrace();
